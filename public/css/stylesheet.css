@@ -1,0 +1,85 @@
+body {
+  color: white;
+}
+
+section {
+  position: absolute;
+  display: block;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 0;
+}
+
+section.line-one {
+  background-color: red;
+  min-width: 400px;
+  min-height: 100px;
+}
+
+section.line-two {
+  background-color: yellow;
+  width: 400px;
+}
+
+section.line-three {
+  background-color: blue;
+  width: 400px;
+}
+
+article {
+  background-color: gray;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  margin: 1px;
+}
+
+article.top-left {
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+article.top-middle {
+  top: 0px;
+  left: 200px;
+  z-index: 10;
+}
+
+#my-name {
+  position: relative;
+}
+
+#cv {
+  position: relative;
+}
+
+#email-icon {
+  width: 80px;
+}
+
+#github-icon {
+  width: 100px;
+}
+
+#camera-icon {
+  width: 100px;
+}
+
+#linkedin-icon {
+  width: 80px;
+}
+
+#papercrane-icon {
+  width: 100px;
+}
+
+#twitter-icon {
+  width: 80px;
+}
+
+#wordpress-icon {
+  width: 100px;
+}
