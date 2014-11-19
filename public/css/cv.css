@@ -1,0 +1,58 @@
+body {
+  color: black;
+  font-family: 'Merriweather', serif;
+  line-height: 120%;
+}
+
+section.cv-body {
+  width: 75%;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #C9D787 solid;
+  padding: 2%;
+}
+
+header {
+  text-align: center;
+}
+
+strong {
+  font-weight: bold;
+}
+
+article {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 5px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.2em;
+  background-color: #C9D787;
+  padding: 5px;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-left: 2%;
+  margin-top: 0.5em;
+  line-height: 140%;
+}
+
+p {
+  font-size: 0.75em;
+  margin-left: 2%;
+}
+
+ul {
+  font-size: 0.75em;
+  margin-left: 4%;
+}
+

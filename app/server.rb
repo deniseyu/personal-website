@@ -7,8 +7,8 @@ class PersonalWebsite < Sinatra::Base
     erb :index
   end
 
-  get '/test' do 
-    erb :test
+  get '/cv' do 
+    erb :cv
   end
 
 end
