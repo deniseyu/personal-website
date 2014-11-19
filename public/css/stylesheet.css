@@ -161,6 +161,10 @@ img {
   text-align: center;
 }
 
+#my-name {
+  color: white;
+}
+
 #email-text { left: 27px; }
 #github-text { left: 37px; }
 #linkedin-text { left: 25px; }
