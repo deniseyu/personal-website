@@ -1,85 +1,182 @@
 body {
   color: white;
+  background-color: white;
+  font-family: 'Cutive Mono';
 }
 
-section {
-  position: absolute;
-  display: block;
-  height: 150px;
+body a {
+  color: white;
+  text-decoration: none;
+}
+
+.nine-by-nine-grid {
+  margin-top: 5em;
   margin-left: auto;
   margin-right: auto;
-  z-index: 0;
+  width: 500px;
 }
 
-section.line-one {
-  background-color: red;
-  min-width: 400px;
-  min-height: 100px;
-}
+/* image positioning */
 
-section.line-two {
-  background-color: yellow;
-  width: 400px;
-}
-
-section.line-three {
-  background-color: blue;
-  width: 400px;
-}
-
-article {
-  background-color: gray;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  margin: 1px;
-}
-
-article.top-left {
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-}
-
-article.top-middle {
-  top: 0px;
-  left: 200px;
-  z-index: 10;
+img {
+  position: absolute;
 }
 
 #my-name {
-  position: relative;
+  font-size: 2em;
+  text-align: center;
+  position: absolute;
+  top: 45px;
+  left: 19px;
+  height: 100px;
+  width: 100px;
 }
 
-#cv {
-  position: relative;
+#cv-icon {
+  top: 25px;
+  left: 24px;
+  width: 100px;
 }
 
 #email-icon {
-  width: 80px;
-}
-
-#github-icon {
   width: 100px;
-}
-
-#camera-icon {
-  width: 100px;
+  left: 25px;
+  top: 40px;
 }
 
 #linkedin-icon {
-  width: 80px;
-}
-
-#papercrane-icon {
   width: 100px;
+  top: 25px;
+  left: 25px;
 }
 
 #twitter-icon {
-  width: 80px;
+  width: 95px;
+  left: 27px;
+  top: 35px;
 }
 
 #wordpress-icon {
+  top: 27px;
+  left: 25px;
   width: 100px;
 }
+
+#github-icon {
+  width: 120px;
+  left: 15px;
+  top: 15px;
+}
+
+#camera-icon {
+  top: 25px;
+  left: 25px;
+  width: 100px;
+}
+
+#papercrane-icon {
+  top: 30px;
+  left: 25px;
+  width: 100px;
+}
+
+#page-footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  background-color: black;
+  bottom: 0px;
+  font-size: 0.8em;
+}
+
+/* flipping containers */
+
+.top-left-container, .top-center-container, .top-right-container, .center-left-container, .smack-dab-center, .center-right-container, .bottom-left-container, .bottom-center-container, .bottom-right-container {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  margin: 4px;
+  margin-bottom: 4px;
+}
+
+.top-left-flipper, .top-center-flipper, .top-right-flipper, .center-left-flipper, .center-right-flipper, .bottom-left-flipper, .bottom-center-flipper, .bottom-right-flipper {
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transition: all 0.3s linear;
+}
+
+.top-left-container:hover .top-left-flipper {
+  transform: rotateY(180deg);
+}
+
+.top-center-container:hover .top-center-flipper {
+  transform: rotateY(180deg);
+}
+
+.top-right-container:hover .top-right-flipper {
+  transform: rotateY(180deg);
+}
+
+.center-left-container:hover .center-left-flipper {
+  transform: rotateY(180deg);
+}
+
+.center-right-container:hover .center-right-flipper {
+  transform: rotateY(180deg);
+}
+
+.bottom-left-container:hover .bottom-left-flipper {
+  transform: rotateY(180deg);
+}
+
+.bottom-center-container:hover .bottom-center-flipper {
+  transform: rotateY(180deg);
+}
+
+.bottom-right-container:hover .bottom-right-flipper {
+  transform: rotateY(180deg);
+}
+
+.face {
+  background-color: #C9D787;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back.face {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  background-color: #7D8A2E;
+}
+
+#email-text, #github-text, #linkedin-text, #twitter-text, #wordpress-text, #camera-text {
+  position: absolute;
+  top: 60px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+#cv-text, #papercrane-text {
+  position: absolute;
+  top: 50px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+#email-text { left: 27px; }
+#github-text { left: 37px; }
+#linkedin-text { left: 25px; }
+#twitter-text { left: 30px; }
+#wordpress-text { left: 50px; }
+#cv-text { left: 0px; }
+#papercrane-text { left: 0px; }
+
+
