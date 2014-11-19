@@ -11,4 +11,8 @@ class PersonalWebsite < Sinatra::Base
     erb :cv
   end
 
+  get '/error' do 
+    erb :error
+  end
+
 end

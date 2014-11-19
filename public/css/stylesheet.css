@@ -80,15 +80,6 @@ img {
   width: 100px;
 }
 
-#page-footer {
-  width: 100%;
-  text-align: center;
-  position: fixed;
-  background-color: black;
-  bottom: 0px;
-  font-size: 0.8em;
-}
-
 /* flipping containers */
 
 .top-left-container, .top-center-container, .top-right-container, .center-left-container, .smack-dab-center, .center-right-container, .bottom-left-container, .bottom-center-container, .bottom-right-container {
