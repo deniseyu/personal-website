@@ -15,4 +15,8 @@ class PersonalWebsite < Sinatra::Base
     erb :error
   end
 
+  get '/about' do 
+    erb :about
+  end
+
 end

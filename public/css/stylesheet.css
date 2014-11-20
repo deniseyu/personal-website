@@ -10,7 +10,7 @@ body a {
 }
 
 .nine-by-nine-grid {
-  margin-top: 5em;
+  margin-top: 14%;
   margin-left: auto;
   margin-right: auto;
   width: 500px;
@@ -111,6 +111,10 @@ img {
 }
 
 .center-left-container:hover .center-left-flipper {
+  transform: rotateY(180deg);
+}
+
+.center-right-container:hover .center-right-flipper {
   transform: rotateY(180deg);
 }
 
