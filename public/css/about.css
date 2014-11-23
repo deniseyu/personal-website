@@ -1,0 +1,17 @@
+#about-me-main {
+  font-family: 'Cutive Mono';
+  width: 75%;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body a {
+  color: #7D8A2E;
+  text-decoration: none;
+}
+
+p {
+  font-size: 2em;
+  color: #C9D787;
+}
