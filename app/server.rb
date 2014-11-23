@@ -1,6 +1,8 @@
 require 'sinatra/base'
+require 'sinatra/partial'
 
 class PersonalWebsite < Sinatra::Base
+  set :partial_template_engine, :erb
   set :public_folder, 'public'
 
   get '/' do 
@@ -17,6 +19,10 @@ class PersonalWebsite < Sinatra::Base
 
   get '/about' do 
     erb :about
+  end
+
+  get '/test' do 
+    erb :test
   end
 
 end

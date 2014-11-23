@@ -10,10 +10,12 @@ body a {
 }
 
 .nine-by-nine-grid {
-  margin-top: 14%;
+  position: relative;
+  /*margin-top: 10%;*/
   margin-left: auto;
   margin-right: auto;
   width: 500px;
+  transform: translateY(25%);
 }
 
 /* image positioning */
@@ -23,6 +25,7 @@ img {
 }
 
 #my-name {
+  color: white;
   font-size: 2em;
   text-align: center;
   position: absolute;
@@ -80,9 +83,9 @@ img {
   width: 100px;
 }
 
-/* flipping containers */
+/* flipping animations */
 
-.top-left-container, .top-center-container, .top-right-container, .center-left-container, .smack-dab-center, .center-right-container, .bottom-left-container, .bottom-center-container, .bottom-right-container {
+.top-left-container, .top-center-container, .top-right-container, .center-left-container, .center-container, .center-right-container, .bottom-left-container, .bottom-center-container, .bottom-right-container {
   display: inline-block;
   position: relative;
   width: 150px;
@@ -91,7 +94,7 @@ img {
   margin-bottom: 7px;
 }
 
-.top-left-flipper, .top-center-flipper, .top-right-flipper, .center-left-flipper, .center-right-flipper, .bottom-left-flipper, .bottom-center-flipper, .bottom-right-flipper {
+.top-left-flipper, .top-center-flipper, .top-right-flipper, .center-left-flipper, .center-flipper, .center-right-flipper, .bottom-left-flipper, .bottom-center-flipper, .bottom-right-flipper {
   width: 150px;
   height: 150px;
   transform-style: preserve-3d;
@@ -114,7 +117,7 @@ img {
   transform: rotateY(180deg);
 }
 
-.center-right-container:hover .center-right-flipper {
+.center-container:hover .center-flipper {
   transform: rotateY(180deg);
 }
 
@@ -140,6 +143,7 @@ img {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  opacity: .99;
 }
 
 .back.face {
@@ -149,7 +153,10 @@ img {
   padding: 10px;
   color: white;
   background-color: #7D8A2E;
+  opacity: .99;
 }
+
+/** back text of flipping containers **/
 
 #email-text, #github-text, #linkedin-text, #twitter-text, #wordpress-text, #camera-text {
   position: absolute;
@@ -160,13 +167,16 @@ img {
 
 #cv-text, #papercrane-text {
   position: absolute;
-  top: 50px;
+  top: 55px;
   font-size: 1.25em;
   text-align: center;
 }
 
-#my-name {
-  color: white;
+#about-me { 
+  position: absolute;
+  top: 60px;
+  left: 35px;
+  font-size: 1.6em;
 }
 
 #email-text { left: 27px; }
