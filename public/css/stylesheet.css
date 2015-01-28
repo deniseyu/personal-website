@@ -158,21 +158,21 @@ img {
 
 /** back text of flipping containers **/
 
-#email-text, #github-text, #linkedin-text, #twitter-text, #wordpress-text, #camera-text {
+#email-text, #github-text, #linkedin-text, #twitter-text, #wordpress-text, #camera-text, #papercrane-text {
   position: absolute;
   top: 60px;
   font-size: 1.25em;
   text-align: center;
 }
 
-#cv-text, #papercrane-text {
+#cv-text {
   position: absolute;
   top: 55px;
   font-size: 1.25em;
   text-align: center;
 }
 
-#about-me { 
+#about-me {
   position: absolute;
   top: 60px;
   left: 35px;
@@ -185,6 +185,6 @@ img {
 #twitter-text { left: 30px; }
 #wordpress-text { left: 50px; }
 #cv-text { left: 0px; }
-#papercrane-text { left: 0px; }
+#papercrane-text { left: 26px; }
 
 
