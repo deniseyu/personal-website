@@ -2,3 +2,7 @@ app/views/test.erb
 public/css/test.css
 public/images/panda-v2-head.png
 public/images/panda-v2.png
+public/images/prof-photo.png
+public/images/prof-pic-hat.png
+public/images/prof-pic-museum.png
+secrets.rb
