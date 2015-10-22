@@ -1,0 +1,44 @@
+.frame--container
+  color: black
+  position: absolute
+  height: 100%
+  width: 100%
+  overflow: hidden
+  background: pink
+
+  .frame--home
+    border: 1px solid red
+    height: 50%
+    width: 50%
+    position: absolute
+    margin: auto
+    transform: translateY(50%)
+    left: 25%
+
+  .frame--left
+    position: absolute
+    height: 50%
+    width: 50%
+    transform: translateY(50%)
+    left: -500px
+
+  p.frame--message
+    color: black
+    margin: 4em
+
+  .frame
+
+    &.slide-to-right
+      -webkit-animation: slide 0.5s forwards
+      -webkit-animation-delay: 2s
+      animation: slide 0.5s forwards
+      animation-delay: 1s
+
+
+@-webkit-keyframes slide
+  100% 
+    left: 25% 
+
+@keyframes slide
+  100%
+    left: 25% 
