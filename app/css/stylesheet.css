@@ -2,6 +2,7 @@ body {
   color: white;
   background-color: white;
   font-family: 'Cutive Mono';
+  width: 100%;
 }
 
 body a {
@@ -9,182 +10,101 @@ body a {
   text-decoration: none;
 }
 
-.nine-by-nine-grid {
-  position: relative;
-  /*margin-top: 10%;*/
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-  transform: translateY(25%);
+a:hover {
+  font-weight: 800;
+  color: #FFC0A9;
 }
 
-/* image positioning */
-
-img {
-  position: absolute;
+.emoji {
+  font-size: 25px;
 }
 
-#my-name {
-  color: white;
-  font-size: 2em;
-  text-align: center;
-  position: absolute;
-  top: 45px;
-  left: 19px;
-  height: 100px;
-  width: 100px;
-}
-
-#cv-icon {
-  top: 25px;
-  left: 24px;
-  width: 100px;
-}
-
-#email-icon {
-  width: 100px;
-  left: 25px;
-  top: 40px;
-}
-
-#linkedin-icon {
-  width: 100px;
-  top: 25px;
-  left: 25px;
-}
-
-#twitter-icon {
-  width: 95px;
-  left: 27px;
-  top: 35px;
-}
-
-#wordpress-icon {
-  top: 27px;
-  left: 25px;
-  width: 100px;
-}
-
-#github-icon {
-  width: 120px;
-  left: 15px;
-  top: 15px;
-}
-
-#camera-icon {
-  top: 25px;
-  left: 25px;
-  width: 100px;
-}
-
-#papercrane-icon {
-  top: 30px;
-  left: 25px;
-  width: 100px;
-}
-
-/* flipping animations */
-
-.top-left-container, .top-center-container, .top-right-container, .center-left-container, .center-container, .center-right-container, .bottom-left-container, .bottom-center-container, .bottom-right-container {
-  display: inline-block;
-  position: relative;
-  width: 150px;
-  height: 150px;
-  z-index: 1;
-  margin-bottom: 7px;
-}
-
-.top-left-flipper, .top-center-flipper, .top-right-flipper, .center-left-flipper, .center-flipper, .center-right-flipper, .bottom-left-flipper, .bottom-center-flipper, .bottom-right-flipper {
-  width: 150px;
-  height: 150px;
-  transform-style: preserve-3d;
-  transition: all 0.3s linear;
-}
-
-.top-left-container:hover .top-left-flipper {
-  transform: rotateY(180deg);
-}
-
-.top-center-container:hover .top-center-flipper {
-  transform: rotateY(180deg);
-}
-
-.top-right-container:hover .top-right-flipper {
-  transform: rotateY(180deg);
-}
-
-.center-left-container:hover .center-left-flipper {
-  transform: rotateY(180deg);
-}
-
-.center-container:hover .center-flipper {
-  transform: rotateY(180deg);
-}
-
-.center-right-container:hover .center-right-flipper {
-  transform: rotateY(180deg);
-}
-
-.bottom-left-container:hover .bottom-left-flipper {
-  transform: rotateY(180deg);
-}
-
-.bottom-center-container:hover .bottom-center-flipper {
-  transform: rotateY(180deg);
-}
-
-.bottom-right-container:hover .bottom-right-flipper {
-  transform: rotateY(180deg);
-}
-
-.face {
+.row:nth-child(even) {
   background-color: #C9D787;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  opacity: .99;
-}
-
-.back.face {
   display: block;
-  transform: rotateY(180deg);
-  box-sizing: border-box;
-  padding: 10px;
   color: white;
-  background-color: #7D8A2E;
-  opacity: .99;
 }
 
-/** back text of flipping containers **/
-
-#email-text, #github-text, #linkedin-text, #twitter-text, #wordpress-text, #camera-text, #papercrane-text {
-  position: absolute;
-  top: 60px;
-  font-size: 1.25em;
-  text-align: center;
+.row:nth-child(odd) a {
+  color: #C9D787;
 }
 
-#cv-text {
-  position: absolute;
-  top: 55px;
-  font-size: 1.25em;
-  text-align: center;
+.row:nth-child(odd) a:hover {
+  color: #FFC0A9;
 }
 
-#about-me {
-  position: absolute;
-  top: 60px;
-  left: 35px;
-  font-size: 1.6em;
+.row.intro {
+  min-height: 3em;
+  font-size: 1.5em;
 }
 
-#email-text { left: 27px; }
-#github-text { left: 37px; }
-#linkedin-text { left: 25px; }
-#twitter-text { left: 30px; }
-#wordpress-text { left: 50px; }
-#cv-text { left: 0px; }
-#papercrane-text { left: 26px; }
+.row.links {
+  min-height: 12em;
+}
 
+.row.comm {
+  min-height: 12em;
+}
 
+.row.talks {
+  min-height: 12em;
+}
+
+.row.other {
+
+}
+
+.row {
+  float: left;
+  display: block;
+  width: 100%;
+  color: #C9D787;
+  box-sizing: border-box;
+  padding: 2em 3em;
+  min-height: 12em;
+}
+
+.row ul li {
+  font-size: 1.4em;
+  margin: 0.25em 0;
+}
+
+.fl-left {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+@media only screen and (max-device-width : 600px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .row {
+    min-height: 12em;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .fl-left {
+    width: 50%;
+  }
+
+  .row {
+    min-height: 10em;
+  }
+}
