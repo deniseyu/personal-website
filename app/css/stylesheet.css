@@ -83,7 +83,7 @@ h2 {
   font-size: 2.25rem;
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-device-width : 480px) {
   .wrapper {
     width: 100%;
   }
@@ -91,9 +91,17 @@ h2 {
   .row {
     min-height: 12em;
   }
+
+  .row.intro {
+    padding: 1.5em;
+  }
+
+  .row.intro p {
+    font-size: 0.8em;
+  }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 481px) {
   .wrapper {
     width: 100%;
     margin: auto;
