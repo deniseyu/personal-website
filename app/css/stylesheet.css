@@ -19,17 +19,23 @@ a:hover {
   font-size: 25px;
 }
 
+hr {
+  color: #51E064;
+  border-width: 1px;
+  border-style: solid;
+  margin: 0 10%;
+}
+
 .row:nth-child(even) {
-  background-color: #C9D787;
   display: block;
-  color: white;
+  color: #51E064;
 }
 
-.row:nth-child(odd) a {
-  color: #C9D787;
+.row a {
+  color: #51E064;
 }
 
-.row:nth-child(odd) a:hover {
+.row a:hover {
   color: #FFC0A9;
 }
 
@@ -58,7 +64,7 @@ a:hover {
   float: left;
   display: block;
   width: 100%;
-  color: #C9D787;
+  color: #51E064;
   box-sizing: border-box;
   padding: 2em 3em;
   min-height: 12em;
@@ -83,7 +89,7 @@ h2 {
   font-size: 2.25rem;
 }
 
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-device-width : 600px) {
   .wrapper {
     width: 100%;
   }
@@ -101,7 +107,7 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 601px) {
   .wrapper {
     width: 100%;
     margin: auto;
