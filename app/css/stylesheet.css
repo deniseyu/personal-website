@@ -20,6 +20,24 @@ a:hover {
   font-size: 25px;
 }
 
+.box {
+  width: 100%;
+  text-align: center;
+}
+
+.box li {
+  display: inline-block;
+  width: 23%;
+  box-sizing: border-box;
+}
+
+.box li img {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 150px;
+  min-width: 75px;
+}
+
 hr {
   color: #51E064;
   border-width: 1px;
@@ -84,7 +102,7 @@ hr {
 
 .cat-icon {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 ul {
