@@ -8,6 +8,7 @@ body {
 body a {
   color: white;
   text-decoration: none;
+  font-weight: 800;
 }
 
 a:hover {
@@ -81,6 +82,11 @@ hr {
   width: 100%;
 }
 
+.cat-icon {
+  width: 100%;
+  max-width: 600px;
+}
+
 ul {
   list-style-position: inside;
 }
@@ -89,9 +95,14 @@ h2 {
   font-size: 2.25rem;
 }
 
-@media only screen and (max-device-width : 600px) {
+@media only screen and (max-device-width : 800px) {
   .wrapper {
+    width: 90%;
+  }
+
+  .cat-icon {
     width: 100%;
+    max-width: 300px; 
   }
 
   .row {
@@ -107,15 +118,21 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
   .wrapper {
-    width: 100%;
+    width: 80%;
     margin: auto;
     box-sizing: border-box;
   }
 
+  .cat-icon {
+    width: 100%;
+    max-width: 400px;
+  }
+
   .fl-left {
     width: 50%;
+    font-size: 2vw;
   }
 
   .row {
