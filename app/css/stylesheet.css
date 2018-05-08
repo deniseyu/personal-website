@@ -57,10 +57,6 @@ hr {
   min-height: 12em;
 }
 
-.row.other {
-
-}
-
 .row {
   float: left;
   display: block;
@@ -80,6 +76,10 @@ hr {
   display: block;
   float: left;
   width: 100%;
+}
+
+.cat-container {
+  margin: auto;
 }
 
 .cat-icon {
