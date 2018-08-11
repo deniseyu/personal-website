@@ -1,4 +1,4 @@
-This is the git repo for my personal website, at http://deniseyu.com .
+This is the git repo for my personal website, at http://deniseyu.io .
 
 Technologies used: 
 
