@@ -113,6 +113,26 @@ h2 {
   font-size: 2.25rem;
 }
 
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75em;
+}
+
+.image-container a {
+  display: inline-block;
+  max-width: 12em;
+  vertical-align: top;
+}
+
+.image {
+  height: 12em;
+  width: 12em;
+}
+
+.gopher {
+  background: 50% 50% no-repeat;
+}
+
 @media only screen and (max-device-width : 800px) {
   .wrapper {
     width: 90%;
@@ -120,7 +140,7 @@ h2 {
 
   .cat-icon {
     width: 100%;
-    max-width: 300px; 
+    max-width: 300px;
   }
 
   .row {

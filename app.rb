@@ -8,4 +8,8 @@ class PersonalWebsite < Sinatra::Base
   get '/' do
     erb :index
   end
+
+  get '/art' do
+    erb :gallery
+  end
 end
