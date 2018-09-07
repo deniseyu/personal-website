@@ -134,6 +134,11 @@ h3 {
   background: 50% 50% no-repeat;
 }
 
+.sketchnote {
+  background: 10% no-repeat;
+  background-size: 250px;
+}
+
 @media only screen and (max-device-width : 800px) {
   .wrapper {
     width: 90%;
