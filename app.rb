@@ -12,4 +12,8 @@ class PersonalWebsite < Sinatra::Base
   get '/art' do
     erb :gallery
   end
+
+  get '/distsystalk' do
+    erb :distsystalk
+  end
 end
