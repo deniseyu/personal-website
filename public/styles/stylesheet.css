@@ -75,6 +75,16 @@ hr {
   min-height: 12em;
 }
 
+.row.talks li {
+  margin-bottom: 0.5em;
+  font-size: 1.75em;
+}
+
+.row.talks li p {
+  font-size: 0.8em;
+  color: #FFC0A9;
+}
+
 .row {
   float: left;
   display: block;
