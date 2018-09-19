@@ -98,6 +98,7 @@ hr {
 .row ul li {
   font-size: 1.4em;
   margin: 0.25em 0;
+  min-width: 5em;
 }
 
 .fl-left {
