@@ -16,4 +16,8 @@ class PersonalWebsite < Sinatra::Base
   get '/distsystalk' do
     erb :distsystalk
   end
+
+  get '/sketchnoting' do
+    send_file(File.join(settings.public_folder, 'sketchnoting-talk.pdf'))
+  end
 end
