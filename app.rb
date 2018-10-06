@@ -20,4 +20,8 @@ class PersonalWebsite < Sinatra::Base
   get '/sketchnoting' do
     send_file(File.join(settings.public_folder, 'sketchnoting-talk.pdf'))
   end
+
+  get '/odb' do
+    erb :odbtalk
+  end
 end
