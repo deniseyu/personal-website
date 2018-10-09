@@ -24,4 +24,8 @@ class PersonalWebsite < Sinatra::Base
   get '/odb' do
     erb :odbtalk
   end
+
+  get '/techtalks' do
+    erb :techtalks
+  end
 end
