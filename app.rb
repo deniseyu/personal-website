@@ -28,4 +28,8 @@ class PersonalWebsite < Sinatra::Base
   get '/techtalks' do
     erb :techtalks
   end
+
+  get '/letssketchtech' do
+    send_file(File.join(settings.public_folder, 'lets-sketch-tech-deck.pdf'))
+  end
 end
