@@ -30,6 +30,6 @@ class PersonalWebsite < Sinatra::Base
   end
 
   get '/letssketchtech' do
-    send_file(File.join(settings.public_folder, 'lets-sketch-tech-deck.pdf'))
+    erb :letssketchtech
   end
 end
