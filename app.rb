@@ -9,6 +9,10 @@ class PersonalWebsite < Sinatra::Base
     erb :index
   end
 
+  get '/talks' do
+    erb :talks
+  end
+
   get '/art' do
     erb :gallery
   end
