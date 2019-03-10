@@ -36,4 +36,8 @@ class PersonalWebsite < Sinatra::Base
   get '/letssketchtech' do
     erb :letssketchtech
   end
+
+  get '/srecon' do
+    erb :srecon
+  end
 end
