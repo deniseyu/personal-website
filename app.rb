@@ -1,6 +1,5 @@
 require 'sinatra/base'
 require 'sinatra/assetpack'
-require 'sass'
 
 class PersonalWebsite < Sinatra::Base
   register Sinatra::AssetPack
@@ -39,5 +38,9 @@ class PersonalWebsite < Sinatra::Base
 
   get '/srecon' do
     erb :srecon
+  end
+
+  get '/srecon-slides' do
+    send_file(File.join(settings.public_folder, 'dist-sys-deck.pdf'))
   end
 end
