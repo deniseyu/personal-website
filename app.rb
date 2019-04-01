@@ -43,4 +43,12 @@ class PersonalWebsite < Sinatra::Base
   get '/srecon-slides' do
     send_file(File.join(settings.public_folder, 'dist-sys-deck.pdf'))
   end
+
+  get '/sponsorship' do
+    send_file(File.join(settings.public_folder, 'sponsorship-deck.pdf'))
+  end
+
+  get '/onboarding' do
+    send_file(File.join(settings.public_folder, 'onboarding-deck.pdf'))
+  end
 end
