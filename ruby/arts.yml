@@ -1,0 +1,426 @@
+---
+- category: topic-sketchnotes
+  path: sketchnotes/topic-based
+  assets:
+  - name: "aeropress coffees"
+    file: aeropress.png
+    date: 2019-05-02
+  - name: "non-coding contributions"
+    file: non-coding-contributions.png
+    date: 2019-04-01
+  - name: "asking good questions"
+    file: asking-questions.png
+    date: 2019-04-09
+    metatext: "the four golden signals of monitoring"
+  - name: "monitoring, from the SRE book"
+    file: monitoring.png
+    date: 2019-02-04
+    metatext: "the four golden signals of monitoring"
+  - name: "the raft consensus algorithm"
+    file: raft.png
+  - name: "my favorite terminal tools"
+    file: terminal-tools.png
+  - name: "filesystem capabilities"
+    file: fscaps.png
+  - name: "PCF opsmanager"
+    file: opsmanager.png
+  - name: "leader failover"
+    file: failover.png
+  - name: "credhub"
+    file: credhub.png
+  - name: "containers vs virtual machines"
+    file: containers-vms.png
+  - name: "durable teams, from 'The Managers Path'"
+    file: durable-teams.png
+  - name: "container-to-container networking"
+    file: container-networking.png
+  - name: "continuous delivery"
+    file: continuous-delivery.png
+  - name: "mince noodles recipe"
+    file: mince-noodles.png
+  - name: "product management @ pivotal"
+    file: product-management.png
+  - name: "capabilities of high-performing teams, from Accelerate"
+    file: accelerate.png
+  - name: "multi-datacenter mySQL"
+    file: mysql-multi-dc.png
+  - name: "appTx"
+    file: apptx.png
+  - name: "some k8s primitives"
+    file: k8s-primitives.png
+  - name: "PCFS"
+    file: pcfs.png
+  - name: "hardening security in CF"
+    file: hardening-security.png
+  - name: "availability in CF"
+    file: cf-availability.png
+  - name: "balanced teams"
+    file: balanced-team.png
+  - name: "linux namespaces"
+    file: namespaces.png
+  - name: "the principle of least privilege"
+    file: principle-least-privilege.png
+  - name: "monolith to microservices"
+    file: monolith-to-microservices.png
+  - name: "kibosh"
+    file: kibosh.png
+  - name: "eirini"
+    file: eirini.png
+  - name: "12 factor applications"
+    file: 12-factors.png
+  - name: "8 fallacies of distributed computing"
+    file: 8-fallacies.png
+  - name: "the cloudops team"
+    file: cloudops.png
+  - name: "UAA"
+    file: uaa.png
+  - name: "context flow"
+    file: context-flow.png
+  - name: "helm"
+    file: helm.png
+  - name: "istio"
+    file: istio.png
+  - name: "scaling things that don't scale @ airbnb"
+    file: airbnb.png
+  - name: "crafting secure software"
+    file: crafting-secure-software.png
+  - name: "open service broker API"
+    file: osbapi.jpg
+  - name: "CF services"
+    file: cf-services.jpg
+  - name: "CF bind"
+    file: cf-service-bindings.jpg
+  - name: "on-demand service broker"
+    file: odb.jpg
+  - name: "load-balancing algorithms"
+    file: load-balancing.jpg
+  - name: "som tam recipe"
+    file: somtam.jpg
+  - name: "how we remote pair"
+    file: remote-pairing.jpg
+  - name: "sunday roast"
+    file: sunday-roast.jpg
+  - name: "garden containers"
+    file: garden.jpg
+  - name: "example-based testing"
+    file: example-based-testing.jpg
+  - name: "service instance sharing"
+    file: service-instance-sharing.jpg
+  - name: "bosh errands"
+    file: bosh-errands.jpg
+  - name: "cloud foundry container runtime"
+    file: cfcr.png
+  - name: "a kubernetes cluster"
+    file: k8s-cluster.png
+  - name: "CF push"
+    file: cf-push.png
+  - name: "teenage dirtbag"
+    file: dirtbag.png
+  - name: "partition handling in rabbitMQ"
+    file: rabbitmq-partitioning.jpg
+  - name: "pork larb recipe"
+    file: pork-larb.jpg
+  - name: "TCP vs UDP"
+    file: tcp-udp.jpg
+  - name: "greedy algorithms"
+    file: greedy-algorithms.jpg
+
+- category: talk-sketchnotes
+  path: sketchnotes/talk-based
+  assets:
+  - name: "being glue (Tanya Reilly)"
+    file: tanya-being-glue.png
+    date: 2019-04-30
+  - name: "creating a career ladder for engineers (Marco Rogers)"
+    file: marco-career-ladder.png
+    date: 2019-04-30
+  - name: "burnout breakdown (Anjuan & Dr. Aneika Simmons)"
+    file: anjuan-aneika-burnout.png
+    date: 2019-04-30
+  - name: "crucial career conversations (Adrienne Friend)"
+    file: adrienne-career-convos.png
+    date: 2019-04-30
+  - name: "deconstructing monoliths (Kirsten Westeinde)"
+    file: kirsten-deconstructing-monoliths.png
+    date: 2019-04-30
+  - name: "communicating architectural decisions (David Ayers)"
+    file: david-arch-decisions.png
+    date: 2019-04-30
+  - name: "why production is complex (Liz Fong-Jones)"
+    file: liz-detangling-prod.png
+    date: 2019-04-30
+  - name: "being right is only half the battle (Rod Begbie)"
+    file: rod-being-right.png
+    date: 2019-04-30
+  - name: "resilience engineering myth-busting (Will Gallego)"
+    file: will-resilience-eng.png
+    date: 2019-04-30
+  - name: "4 components of : high-performing teams (Lisa van Gelder)"
+    file: lisa-high-perf-teams.png
+    date: 2019-04-29
+  - name: "optimizing for learning (Logan McDonald)"
+    file: logan-optimizing-learning.png
+    date: 2019-04-29
+  - name: "don't skip the story of your work (Yaphi Berhanu)"
+    file: yaphi-story-work.png
+    date: 2019-04-29
+  - name: "debugging the routing tier (Angela & Nitya)"
+    file: angela-nitya-routing.png
+    date: 2019-04-04.png
+  - name: "reliability engineering for humans (Hannah Foxwell)"
+    file: hannah-reliability-eng.png
+    date: 2019-04-04.png
+  - name: "my first BOSH release (Peter & Rebecca)"
+    file: peter-rebecca-bosh-release.png
+    date: 2019-04-04.png
+  - name: "are you smelling smoke? (Chunyi & George)"
+    file: chunyi-george-disaster-recovery.png
+    date: 2019-04-04.png
+  - name: "chaos engineering for CF (Karun & Ramesh)"
+    file: karun-ramesh-chaos-eng.png
+    date: 2019-04-04.png
+  - name: "BOSH roadmap (Danny & Morgan)"
+    file: morgan-danny-bosh-roadmap.png
+    date: 2019-04-04.png
+  - name: "8 traps of chaos eng (Nora Jones)"
+    file: nora-jones-8-traps.png
+    date: 2019-03-28
+  - name: "chaos and observability (Charity Majors)"
+    file: charity-majors-chaos-and-observability.png
+    date: 2019-03-28
+  - name: "precognition of security (Aaron Rinehart)"
+    file: aaron-rinehart-security.png
+    date: 2019-03-28
+  - name: "reconciling chaos (Kris Nova)"
+    file: kris-nova-reconciling-chaos.png
+    date: 2019-03-28
+  - name: "madaari (Ashutosh Raina)"
+    file: ashutosh-raina-madaari.png
+    date: 2019-03-28
+  - name: "disaster testing (Padma Gopalan)"
+    file: padma-gopalan-disaster-testing.png
+    date: 2019-03-28
+  - name: "going on-call (Chie & Wenting)"
+    file: chie-wenting-going-on-call.png
+    date: 2019-03-27
+  - name: "righting the ship (Michael & Todd)"
+    file: michael-todd-righting-the-ship.png
+    date: 2019-03-27
+  - name: "extending error budgets (Jim & David)"
+    file: david-jim-extending-error-budgets.png
+    date: 2019-03-27
+  - name: "product management and SRE (Jen Wohlner)"
+    file: jen-wohlner-prod-mgmt-and-SRE.png
+    date: 2019-03-27
+  - name: "editing production data (Julie Qiu)"
+    file: julie-qiu-editing-prod-data.png
+    date: 2019-03-27
+  - name: "aperture (Ruben Oantas)"
+    file: ruben-oantas-aperture.png
+    date: 2019-03-27
+  - name: "configuring PKS clusters (Angela & Nikita)"
+    file: configuring-pks-clusters.png
+    date: 2018-10-01
+  - name: "PCF opsmanager (Alan McGinlay)"
+    file: opsmanager-v1.jpg
+    date: 2018-09-07
+  - name: "12 steps to cloud readiness (Ed & Jatin)"
+    file: ed-jatin-12-steps.jpg
+    date: 2018-09-07
+  - name: "permissions in cloud foundry (Isobel Redelmeier)"
+    file: isobel-perm.jpg
+    date: 2018-09-07
+
+- category: gophers
+  path: gophers
+  assets:
+  - name: lucina
+    file: lucina.png
+    metatext: "Lucina from Fire Emblem series"
+  - name: "mid-autumn festival"
+    file: mid-autumn-festival.png
+  - name: kaylee
+    file: kaylee.png
+  - name: captain mal
+    file: mal.png
+  - name: crazy rich gophers
+    file: rachel-bg.png
+  - name: suzy
+    file: suzy.png
+  - name: richie
+    file: richie.png
+  - name: steve zissou
+    file: steve-zissou.png
+  - name: margot
+    file: margot.png
+  - name: totoro
+    file: totoro.png
+  - name: aegon
+    file: jon-snow.png
+  - name: hodor
+    file: hodor.png
+  - name: khaleesi
+    file: daenerys.png
+  - name: no one
+    file: arya.png
+  - name: anna
+    file: anna.png
+  - name: elsa
+    file: elsa.png
+  - name: olaf
+    file: olaf.png
+  - name: harley
+    file: harley.png
+  - name: glaceon
+    file: glaceon.png
+  - name: leafeon
+    file: leafeon.png
+  - name: sylveon
+    file: sylveon.png
+  - name: vaporeon
+    file: vaporeon.png
+  - name: espeon
+    file: espeon.png
+  - name: flareon
+    file: flareon.png
+  - name: umbreon
+    file: umbreon.png
+  - name: jolteon
+    file: jolteon.png
+  - name: eevee
+    file: eevee.png
+  - name: angela (pivotal)
+    file: angela.png
+  - name: simon (pivotal)
+    file: simon.png
+  - name: big red ball
+    file: big-red-ball.png
+  - name: gypsydave5
+    file: gopher-dave.png
+  - name: quii
+    file: gopher-chris.png
+  - name: vlad (pivotal)
+    file: vlad.png
+  - name: debbie (pivotal)
+    file: debbie.png
+  - name: matt c (pivotal)
+    file: cholick.png
+  - name: security gopher
+    file: security.png
+
+- category: cats
+  path: cats
+  assets:
+  - name: "snow day"
+    file: snow.png
+    thumbnail: true
+  - name: "bebop crew"
+    file: bebop-crew.png
+    thumbnail: true
+  - name: haku nagi & poki
+    file: haku-nagi-poki.png
+    thumbnail: true
+  - name: pk meow
+    file: ness.png
+    thumbnail: true
+  - name: kitten icarus
+    file: pit.png
+    thumbnail: true
+  - name: piranha cat
+    file: piranha.png
+    thumbnail: true
+  - name: sonicat
+    file: sonic.png
+    thumbnail: true
+  - name: wifi
+    file: wifi-is-down.jpg
+    thumbnail: true
+  - name: princess
+    file: princess-rescue.png
+    thumbnail: true
+  - name: oxygen masks
+    file: oxygen-masks.png
+    thumbnail: true
+
+- category: misc
+  path: doodles
+  assets:
+  - name: "pink hair"
+    file: girl.png
+    thumbnail: true
+  - name: "emi dog"
+    file: emi-dog.jpg
+  - name: "dim sums"
+    file: dim-sums.png
+    thumbnail: true
+  - name: "to all the burritos i've loved before"
+    file: larajean.png
+    thumbnail: true
+  - name: mobile link
+    file: mobile-link.png
+    thumbnail: true
+  - name: azn sauces i like
+    file: sauces.png
+    thumbnail: true
+  - name: soy sauce recipes
+    file: soy-sauce.png
+    thumbnail: true
+  - name: ski crew
+    file: ski.png
+    thumbnail: true
+  - name: drake yes
+    file: drake-cat-yes.png
+  - name: drake no
+    file: drake-cat-no.png
+  - name: otter
+    file: Otter.png
+  - name: pine marten
+    file: pine-marten.png
+
+- category: talk-images
+  path: conf-talk-images
+  conferences:
+  - name: "Cloud Foundry Summit North America 2019"
+    talk: "It's dangerous to go alone: Lessons learnt from onboarding new CF contributors"
+    subpath: onboarding-talk
+    assets:
+    - name: "it's dangerous to go alone!"
+      file: its-dangerous-to-go-alone.png
+      metatext: "Cover art for talk on onboarding by Andrew Su and me"
+      thumbnail: true
+    - name: pachirisu
+      file: pachirisu.png
+    - name: "plusle and minun"
+      file: plusle-minun.png
+    - name: dragonite
+      file: dragonite.png
+    - name: chansey
+      file: chansey.png
+    - name: buneary
+      file: buneary.png
+    - name: "shinx and skitty"
+      file: shinx-skitty.png
+    - name: "slowpoke and shuckle"
+      file: slowpoke-shuckle.png
+    - name: "on the run"
+      file: running.png
+    - name: "cleffa and clefable"
+      file: cleffa-clefable.png
+    - name: "dragonite, latios, pichu"
+      file: dragons.png
+    - name: "fletchinder and psyduck"
+      file: birbs.png
+    - name: "clefairy's network"
+      file: clefairy.png
+    - name: "squirtle signing up"
+      file: squirtle.png
+    - name: "daily standup"
+      file: ampharos-standup.png
+    - name: "whiteboarding"
+      file: torchic.png
+    - name: "tech talking"
+      file: vulpix.png
+    - name: "andrewoodo"
+      file: sudowoodo.png
+    - name: chikorita
+      file: chikorita.png

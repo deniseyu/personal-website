@@ -1,0 +1,80 @@
+<main class="wrapper">
+  <div class="row intro">
+    <h2 class="greeting">
+      My Art
+    </h2>
+    <p>
+      I draw stuff sometimes. You may freely redistribute and print any images here with attribution, under the terms of the
+      <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons BY-SA license</a>. If you want to
+      remix or modify anything here, please <a href="mailto:me@deniseyu.io">ask me first</a>!
+    </p>
+  </div>
+
+  <div class="row gallery">
+    <h3>sketchnotes based on conference talks</h3>
+    <div class="image-container">
+      <% @talk_sketchnotes.each do |sketch| %>
+        <a href="<%= @bucket.file("Art/sketchnotes/talk-based/#{sketch["file"]}").public_url %>">
+          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/sketchnotes/talk-based/thumbnails/#{sketch["file"]}").media_url %>);'></div>
+          <%= sketch["name"] %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row gallery">
+    <h3>general topic sketchnotes (some non-tech!)</h3>
+    <div class="image-container">
+      <% @topic_sketchnotes.each do |sketch| %>
+        <a href="<%= @bucket.file("Art/sketchnotes/topic-based/#{sketch["file"]}").public_url %>">
+          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/sketchnotes/topic-based/thumbnails/#{sketch["file"]}").media_url %>);'></div>
+          <%= sketch["name"] %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row gallery">
+    <h3>gophers</h3>
+    <div class="image-container">
+      <% @gophers.each do |sketch| %>
+        <a href="<%= @bucket.file("Art/gophers/#{sketch["file"]}").public_url %>">
+          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/gophers/#{sketch["file"]}").media_url %>);'></div>
+          <%= sketch["name"] %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row gallery">
+    <h3>kitties</h3>
+    <div class="image-container">
+      <% @cats.each do |sketch| %>
+        <a href="<%= @bucket.file("Art/doodles/#{sketch["file"]}").public_url %>">
+        <% if sketch["thumbnail"] %>
+          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/doodles/thumbnails/#{sketch["file"]}").media_url %>);'></div>
+        <% else %>
+          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/doodles/#{sketch["file"]}").media_url %>);'></div>
+        <% end %>
+          <%= sketch["name"] %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row gallery">
+    <h3>misc doodles that don't fit anywhere else</h3>
+    <div class="image-container">
+      <% @doodles.each do |sketch| %>
+        <a href="<%= @bucket.file("Art/doodles/#{sketch["file"]}").public_url %>">
+        <% if sketch["thumbnail"] %>
+          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/doodles/thumbnails/#{sketch["file"]}").media_url %>);'></div>
+        <% else %>
+          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/doodles/#{sketch["file"]}").media_url %>);'></div>
+        <% end %>
+          <%= sketch["name"] %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+</main>
