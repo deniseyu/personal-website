@@ -14,7 +14,9 @@
     <h3>sketchnotes based on conference talks</h3>
     <div class="image-container">
       <% @talk_sketchnotes.each do |sketch| %>
-        <a href="<%= @bucket.file("Art/sketchnotes/talk-based/#{sketch["file"]}").public_url %>">
+        <a class="sketchnote-link"
+          data-name="<%= sketch["name"] %>"
+          data-url="<%= @bucket.file("Art/sketchnotes/talk-based/#{sketch["file"]}").public_url %>" href="#">
           <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/sketchnotes/talk-based/thumbnails/#{sketch["file"]}").media_url %>);'></div>
           <%= sketch["name"] %>
         </a>
@@ -26,7 +28,9 @@
     <h3>general topic sketchnotes (some non-tech!)</h3>
     <div class="image-container">
       <% @topic_sketchnotes.each do |sketch| %>
-        <a href="<%= @bucket.file("Art/sketchnotes/topic-based/#{sketch["file"]}").public_url %>">
+        <a class="sketchnote-link"
+          data-name="<%= sketch["name"] %>"
+          data-url="<%= @bucket.file("Art/sketchnotes/topic-based/#{sketch["file"]}").public_url %>" href="#">
           <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/sketchnotes/topic-based/thumbnails/#{sketch["file"]}").media_url %>);'></div>
           <%= sketch["name"] %>
         </a>
@@ -38,7 +42,9 @@
     <h3>gophers</h3>
     <div class="image-container">
       <% @gophers.each do |sketch| %>
-        <a href="<%= @bucket.file("Art/gophers/#{sketch["file"]}").public_url %>">
+        <a class="sketchnote-link"
+          data-name="<%= sketch["name"] %>"
+          data-url="<%= @bucket.file("Art/gophers/#{sketch["file"]}").public_url %>" href="#">
           <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/gophers/#{sketch["file"]}").media_url %>);'></div>
           <%= sketch["name"] %>
         </a>
@@ -50,7 +56,9 @@
     <h3>kitties</h3>
     <div class="image-container">
       <% @cats.each do |sketch| %>
-        <a href="<%= @bucket.file("Art/doodles/#{sketch["file"]}").public_url %>">
+        <a class="sketchnote-link"
+          data-name="<%= sketch["name"] %>"
+          data-url="<%= @bucket.file("Art/doodles/#{sketch["file"]}").public_url %>" href="#">
         <% if sketch["thumbnail"] %>
           <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/doodles/thumbnails/#{sketch["file"]}").media_url %>);'></div>
         <% else %>
@@ -66,7 +74,10 @@
     <h3>misc doodles that don't fit anywhere else</h3>
     <div class="image-container">
       <% @doodles.each do |sketch| %>
-        <a href="<%= @bucket.file("Art/doodles/#{sketch["file"]}").public_url %>">
+        <a
+          class="sketchnote-link"
+          data-name="<%= sketch["name"] %>"
+          data-url="<%= @bucket.file("Art/doodles/#{sketch["file"]}").public_url %>" href="#">
         <% if sketch["thumbnail"] %>
           <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/doodles/thumbnails/#{sketch["file"]}").media_url %>);'></div>
         <% else %>
@@ -78,3 +89,17 @@
     </div>
   </div>
 </main>
+<script>
+  var userSelection = document.getElementsByClassName('sketchnote-link');
+  for(var i = 0; i < userSelection.length; i++) {
+    (function(index) {
+      userSelection[index].addEventListener("click", function(elem) {
+        elem.preventDefault()
+        var url = userSelection[index].dataset.url
+        var name = userSelection[index].dataset.name
+        ga('send', 'event', 'Art', 'expand', name)
+        window.location.href = url
+       })
+    })(i);
+  }
+</script>
