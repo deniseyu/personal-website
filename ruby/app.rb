@@ -62,6 +62,10 @@ class PersonalWebsite < Sinatra::Base
   get '/onboarding' do
     send_file(File.join(settings.public_folder, 'onboarding-deck.pdf'))
   end
+
+  get '/feedback-week' do
+    erb :feedback_week
+  end
 end
 
 class ImageLoader
