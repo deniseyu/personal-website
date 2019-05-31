@@ -66,6 +66,10 @@ class PersonalWebsite < Sinatra::Base
   get '/feedback-week' do
     erb :feedback_week
   end
+
+  get '/gocon' do
+    send_file(File.join(settings.public_folder, 'tdd-golang.pdf'))
+  end
 end
 
 class ImageLoader
