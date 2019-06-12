@@ -70,6 +70,10 @@ class PersonalWebsite < Sinatra::Base
   get '/gocon' do
     send_file(File.join(settings.public_folder, 'tdd-golang.pdf'))
   end
+
+  get '/dev-portfolios' do
+    send_file(File.join(settings.public_folder, 'dev-portfolios-deck.pdf'))
+  end
 end
 
 class ImageLoader
