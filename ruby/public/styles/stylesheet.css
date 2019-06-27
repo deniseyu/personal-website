@@ -1,12 +1,13 @@
 body {
   color: white;
   background-color: white;
-  font-family: 'Cutive Mono';
+  font-family: 'Lora';
   width: 100%;
 }
 
 body a {
   color: white;
+  font-family: 'Merriweather';
   text-decoration: none;
   font-weight: 800;
 }
@@ -14,10 +15,6 @@ body a {
 a:hover {
   font-weight: 800;
   color: #FFC0A9;
-}
-
-.emoji {
-  font-size: 25px;
 }
 
 .box {
@@ -38,20 +35,9 @@ a:hover {
   min-width: 75px;
 }
 
-hr {
-  color: #51E064;
-  border-width: 1px;
-  border-style: solid;
-  margin: 0 10%;
-}
-
-.row:nth-child(even) {
-  display: block;
-  color: #51E064;
-}
-
 .row a {
-  color: #51E064;
+  font-weight: 900;
+  color: #999999;
 }
 
 .row a:hover {
@@ -61,38 +47,43 @@ hr {
 .row.intro {
   min-height: 3em;
   font-size: 1.5em;
+  color: #999999;
+}
+
+.row .greeting {
+  margin-bottom: 1em;
+}
+
+.row.talks {
+  color: #999999;
+}
+
+.row.talks li {
+  margin: 0.8em 0;
+}
+
+.row.talks a {
+  color: #FFC0A9;
 }
 
 .row.links {
   min-height: 12em;
 }
 
-.row.comm {
-  min-height: 12em;
-}
-
-.row.talks {
-  min-height: 12em;
-}
-
-.row.talks li {
-  margin-bottom: 0.5em;
-  font-size: 1.75em;
-}
-
-.row.talks li p {
-  font-size: 0.8em;
-  color: #FFC0A9;
-}
-
 .row {
   float: left;
   display: block;
   width: 100%;
-  color: #51E064;
+  color: #82b74b;
   box-sizing: border-box;
   padding: 2em 3em;
   min-height: 12em;
+}
+
+.row p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
 }
 
 .row ul li {
@@ -103,8 +94,25 @@ hr {
 
 .fl-left {
   display: block;
+  box-sizing: border-box;
   float: left;
   width: 100%;
+  padding: 0 1em;
+}
+
+.top-bar {
+  position: absolute;
+  font-size: 1.5em;
+  background-color: #82b74b;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.2em;
+  text-align: center;
+}
+
+.top-bar li {
+  display: inline;
+  margin-right: 1em;
 }
 
 .cat-container {
@@ -150,6 +158,10 @@ h3 {
   background-size: 250px;
 }
 
+.wrapper {
+  padding-top: 1.5em;
+}
+
 @media only screen and (max-device-width : 800px) {
   .wrapper {
     width: 90%;
@@ -182,7 +194,7 @@ h3 {
 
   .cat-icon {
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
   }
 
   .fl-left {
