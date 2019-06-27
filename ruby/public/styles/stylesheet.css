@@ -102,17 +102,25 @@ a:hover {
 
 .top-bar {
   position: absolute;
-  font-size: 1.5em;
+  font-size: 1.4em;
   background-color: #82b74b;
   width: 100%;
   box-sizing: border-box;
-  padding: 0.2em;
+  padding: 0.5em;
   text-align: center;
+  vertical-align: baseline;
 }
 
 .top-bar li {
   display: inline;
-  margin-right: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.top-bar li a {
+  font-family: 'Inconsolata';
+  font-size: 1.2em;
+  color: #333;
 }
 
 .cat-container {
