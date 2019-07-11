@@ -74,6 +74,14 @@ class PersonalWebsite < Sinatra::Base
   get '/dev-portfolios' do
     send_file(File.join(settings.public_folder, 'dev-portfolios-deck.pdf'))
   end
+
+  get '/aotb' do
+    erb :aotb
+  end
+
+  get '/aotb-slides' do
+    send_file(File.join(settings.public_folder, 'aotb.pdf'))
+  end
 end
 
 class ImageLoader
