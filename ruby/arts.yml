@@ -2,6 +2,9 @@
 - category: topic-sketchnotes
   path: sketchnotes/topic-based
   assets:
+  # - name: "gender identities"
+  #   file: gender-identities.png
+  #   date: 2019-07-01
   - name: "aeropress coffees"
     file: aeropress.png
     date: 2019-05-02
@@ -128,7 +131,49 @@
 - category: talk-sketchnotes
   path: sketchnotes/talk-based
   assets:
-  - name: "being glue (Tanya Reilly)"
+  - name: "a journey into intel's SGX (Jess Frazelle)"
+    file: jess-frazelle-sgx.png
+    date: 2019-07-07
+  - name: "eventually perfect distributed systems (Lena Hall)"
+    file: lena-hall-dist-sys.png
+    date: 2019-07-07
+  - name: "search engines: how they work (Toria Gibbs)"
+    file: toria-gibbs-search-engines.png
+    date: 2019-06-07
+  - name: "how to have an operational incident (Courtney Eckhardt)"
+    file: courtney-eckhardt-operational-incident.png
+    date: 2019-05-30
+  - name: "drafting success (Emily Freeman)"
+    file: emily-freeman-drafting-success.png
+    date: 2019-05-30
+  - name: "just in time infra (Austen Novis)"
+    file: austen-novis-just-in-time-infra.png
+    date: 2019-05-30
+  - name: "my favorite errors (Hany Fahim)"
+    file: hany-fahim-favorite-errors.png
+    date: 2019-05-30
+  - name: "making connections visible (Dominica DeGrandis)"
+    file: dominica-degrandis-visible-connections.png
+    date: 2019-05-30
+  - name: "double, double, toil & trouble (Boz & Jesse)"
+    file: boz-jesse-toil-trouble.png
+    date: 2019-05-30
+  - name: "unsafe pointer (Matt Layher)"
+    file: matt-layher-unsafe-pointer.png
+    date: 2019-05-31
+  - name: "go routine cancellation (Topher Bullock)"
+    file: topher-bullock-go-routine-cancellation.png
+    date: 2019-05-31
+  - name: "implementing identity management (James Bowes)"
+    file: james-bowes-identity-mgmt.png
+    date: 2019-05-31
+  - name: "evil go (Jon Bodner)"
+    file: jon-bodner-evil-go.png
+    date: 2019-05-31
+  - name: "resilience in complex adaptive systems (Richard Cook)"
+    file: richard-cook-resilience.png
+    date: 2019-05-10
+  - name: "being glue (tanya reilly)"
     file: tanya-being-glue.png
     date: 2019-04-30
   - name: "creating a career ladder for engineers (Marco Rogers)"
