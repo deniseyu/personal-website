@@ -82,6 +82,10 @@ class PersonalWebsite < Sinatra::Base
   get '/aotb-slides' do
     send_file(File.join(settings.public_folder, 'aotb.pdf'))
   end
+
+  get '/wsc' do
+    redirect to("https://www.dropbox.com/s/7d7jynty8ka9oar/write-speak-code-doodling-deck.pdf?dl=0")
+  end
 end
 
 class ImageLoader
