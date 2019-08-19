@@ -82,6 +82,10 @@ class PersonalWebsite < Sinatra::Base
   get '/aotb-slides' do
     send_file(File.join(settings.public_folder, 'aotb.pdf'))
   end
+
+  get '/wsc' do
+    send_file(File.join(settings.public_folder, 'wsc.pdf'))
+  end
 end
 
 class ImageLoader
