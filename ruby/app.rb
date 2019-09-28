@@ -86,6 +86,10 @@ class PersonalWebsite < Sinatra::Base
   get '/wsc' do
     redirect to("https://www.dropbox.com/s/7d7jynty8ka9oar/write-speak-code-doodling-deck.pdf?dl=0")
   end
+
+  get '/promptconf' do
+    send_file(File.join(settings.public_folder, 'sre-for-cats.pdf'))
+  end
 end
 
 class ImageLoader
