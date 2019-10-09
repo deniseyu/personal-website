@@ -90,6 +90,10 @@ class PersonalWebsite < Sinatra::Base
   get '/promptconf' do
     send_file(File.join(settings.public_folder, 'sre-for-cats.pdf'))
   end
+
+  get '/secure-brokers' do
+    redirect to("https://drive.google.com/file/d/1HSHqdHTDt9bkZPMW6zs6ddU9CJlVjHC7/view")
+  end
 end
 
 class ImageLoader
