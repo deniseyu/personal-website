@@ -94,6 +94,14 @@ class PersonalWebsite < Sinatra::Base
   get '/secure-brokers' do
     redirect to("https://drive.google.com/file/d/1HSHqdHTDt9bkZPMW6zs6ddU9CJlVjHC7/view")
   end
+
+  get '/sreforcats' do
+    send_file(File.join(settings.public_folder, 'sre-for-cats-ignite.pdf'))
+  end
+
+  get '/lisa' do
+    send_file(File.join(settings.public_folder, 'dist-sys-deck-lisa.pdf'))
+  end
 end
 
 class ImageLoader
