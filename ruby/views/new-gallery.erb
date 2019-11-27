@@ -16,8 +16,8 @@
       <% @talk_sketchnotes.each do |sketch| %>
         <a class="sketchnote-link"
           data-name="<%= sketch["name"] %>"
-          data-url="<%= @bucket.file("Art/sketchnotes/talk-based/#{sketch["file"]}").public_url %>" href="#">
-          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/sketchnotes/talk-based/thumbnails/#{sketch["file"]}").media_url %>);'></div>
+          data-url="<%= @bucket.file("Art/sketchnotes/talk-based/#{sketch['file']}.png").public_url %>" href="#">
+          <div class="image sketchnote" style='background-image: url(<%= @bucket.file("Art/sketchnotes/talk-based/thumbnails/#{sketch['file']}.jpeg").public_url %>);'></div>
           <%= sketch["name"] %>
         </a>
       <% end %>

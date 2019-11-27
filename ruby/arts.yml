@@ -2,9 +2,9 @@
 - category: topic-sketchnotes
   path: sketchnotes/topic-based
   assets:
-  # - name: "gender identities"
-  #   file: gender-identities.png
-  #   date: 2019-07-01
+  - name: "gender identities"
+    file: gender-identities.png
+    date: 2019-07-01
   - name: "aeropress coffees"
     file: aeropress.png
     date: 2019-05-02
@@ -131,150 +131,192 @@
 - category: talk-sketchnotes
   path: sketchnotes/talk-based
   assets:
+  - name: "'connections' and postmortems (Chastity Blackwell)"
+    file: chastity-blackwell-postmortems
+    date: 2019-10-28
+  - name: "sysdamins' intro to vulnerability scanning (Tabitha Sable)"
+    file: tabitha-sable-vulnerability-scanning
+    date: 2019-10-28
+  - name: "anatomy of a DDOS attack (Janna Hilferty)"
+    file: janna-hilferty-ddos-anatomy
+    date: 2019-10-28
+  - name: "network fault-finding systems (Jose & Daniel)"
+    file: jose-daniel-fault-finding
+    date: 2019-10-28
+  - name: "round robin scheduling with etcd (Eric Chlebek)"
+    file: eric-chlebek-round-robin
+    date: 2019-10-28
+  - name: "modifying software behavior with interposers (Danny Chen)"
+    file: danny-chen-interposers
+    date: 2019-10-28
+  - name: "what is the joy? (Naomi Ceder)"
+    file: naomi-ceder-joy
+    date: 2019-09-28
+  - name: "navigating mental health as a human (Ana Medina)"
+    file: ana-medina-mental-health
+    date: 2019-08-18
+  - name: "fierce, feisty, fussy... (Katrina & Nikita)"
+    file: nikita-katrina-feedback
+    date: 2019-08-18
+  - name: "making good trouble (Duretti Hirpa)"
+    file: duretti-hirpa-good-trouble
+    date: 2019-08-18
+  - name: "the hero's journey (Alex Qin)"
+    file: alex-qin-heros-journey
+    date: 2019-08-18
+  - name: "navigating build/reuse/buy (Liz Fong-Jones)"
+    file: liz-fj-build-reuse-buy
+    date: 2019-08-18
+  - name: "#CauseAScene (Kim Crayton)"
+    file: kim-crayton-cause-a-scene
+    date: 2019-08-18
+  - name: "how to present authentically (Dana Lawson)"
+    file: dana-lawson-present-authentically
+    date: 2019-08-18
   - name: "a journey into intel's SGX (Jess Frazelle)"
-    file: jess-frazelle-sgx.png
+    file: jess-frazelle-sgx
     date: 2019-07-07
   - name: "eventually perfect distributed systems (Lena Hall)"
-    file: lena-hall-dist-sys.png
+    file: lena-hall-dist-sys
     date: 2019-07-07
   - name: "search engines: how they work (Toria Gibbs)"
-    file: toria-gibbs-search-engines.png
+    file: toria-gibbs-search-engines
     date: 2019-06-07
   - name: "how to have an operational incident (Courtney Eckhardt)"
-    file: courtney-eckhardt-operational-incident.png
+    file: courtney-eckhardt-operational-incident
     date: 2019-05-30
   - name: "drafting success (Emily Freeman)"
-    file: emily-freeman-drafting-success.png
+    file: emily-freeman-drafting-success
     date: 2019-05-30
   - name: "just in time infra (Austen Novis)"
-    file: austen-novis-just-in-time-infra.png
+    file: austen-novis-just-in-time-infra
     date: 2019-05-30
   - name: "my favorite errors (Hany Fahim)"
-    file: hany-fahim-favorite-errors.png
+    file: hany-fahim-favorite-errors
     date: 2019-05-30
   - name: "making connections visible (Dominica DeGrandis)"
-    file: dominica-degrandis-visible-connections.png
+    file: dominica-degrandis-visible-connections
     date: 2019-05-30
   - name: "double, double, toil & trouble (Boz & Jesse)"
-    file: boz-jesse-toil-trouble.png
+    file: boz-jesse-toil-trouble
     date: 2019-05-30
   - name: "unsafe pointer (Matt Layher)"
-    file: matt-layher-unsafe-pointer.png
+    file: matt-layher-unsafe-pointer
     date: 2019-05-31
   - name: "go routine cancellation (Topher Bullock)"
-    file: topher-bullock-go-routine-cancellation.png
+    file: topher-bullock-go-routine-cancellation
     date: 2019-05-31
   - name: "implementing identity management (James Bowes)"
-    file: james-bowes-identity-mgmt.png
+    file: james-bowes-identity-mgmt
     date: 2019-05-31
   - name: "evil go (Jon Bodner)"
-    file: jon-bodner-evil-go.png
+    file: jon-bodner-evil-go
     date: 2019-05-31
   - name: "resilience in complex adaptive systems (Richard Cook)"
-    file: richard-cook-resilience.png
+    file: richard-cook-resilience
     date: 2019-05-10
   - name: "being glue (tanya reilly)"
-    file: tanya-being-glue.png
+    file: tanya-being-glue
     date: 2019-04-30
   - name: "creating a career ladder for engineers (Marco Rogers)"
-    file: marco-career-ladder.png
+    file: marco-career-ladder
     date: 2019-04-30
   - name: "burnout breakdown (Anjuan & Dr. Aneika Simmons)"
-    file: anjuan-aneika-burnout.png
+    file: anjuan-aneika-burnout
     date: 2019-04-30
   - name: "crucial career conversations (Adrienne Friend)"
-    file: adrienne-career-convos.png
+    file: adrienne-career-convos
     date: 2019-04-30
   - name: "deconstructing monoliths (Kirsten Westeinde)"
-    file: kirsten-deconstructing-monoliths.png
+    file: kirsten-deconstructing-monoliths
     date: 2019-04-30
   - name: "communicating architectural decisions (David Ayers)"
-    file: david-arch-decisions.png
+    file: david-arch-decisions
     date: 2019-04-30
   - name: "why production is complex (Liz Fong-Jones)"
-    file: liz-detangling-prod.png
+    file: liz-detangling-prod
     date: 2019-04-30
   - name: "being right is only half the battle (Rod Begbie)"
-    file: rod-being-right.png
+    file: rod-being-right
     date: 2019-04-30
   - name: "resilience engineering myth-busting (Will Gallego)"
-    file: will-resilience-eng.png
+    file: will-resilience-eng
     date: 2019-04-30
   - name: "4 components of : high-performing teams (Lisa van Gelder)"
-    file: lisa-high-perf-teams.png
+    file: lisa-high-perf-teams
     date: 2019-04-29
   - name: "optimizing for learning (Logan McDonald)"
-    file: logan-optimizing-learning.png
+    file: logan-optimizing-learning
     date: 2019-04-29
   - name: "don't skip the story of your work (Yaphi Berhanu)"
-    file: yaphi-story-work.png
+    file: yaphi-story-work
     date: 2019-04-29
   - name: "debugging the routing tier (Angela & Nitya)"
-    file: angela-nitya-routing.png
+    file: angela-nitya-routing
     date: 2019-04-04.png
   - name: "reliability engineering for humans (Hannah Foxwell)"
-    file: hannah-reliability-eng.png
+    file: hannah-reliability-eng
     date: 2019-04-04.png
   - name: "my first BOSH release (Peter & Rebecca)"
-    file: peter-rebecca-bosh-release.png
+    file: peter-rebecca-bosh-release
     date: 2019-04-04.png
   - name: "are you smelling smoke? (Chunyi & George)"
-    file: chunyi-george-disaster-recovery.png
+    file: chunyi-george-disaster-recovery
     date: 2019-04-04.png
   - name: "chaos engineering for CF (Karun & Ramesh)"
-    file: karun-ramesh-chaos-eng.png
+    file: karun-ramesh-chaos-eng
     date: 2019-04-04.png
   - name: "BOSH roadmap (Danny & Morgan)"
-    file: morgan-danny-bosh-roadmap.png
+    file: morgan-danny-bosh-roadmap
     date: 2019-04-04.png
   - name: "8 traps of chaos eng (Nora Jones)"
-    file: nora-jones-8-traps.png
+    file: nora-jones-8-traps
     date: 2019-03-28
   - name: "chaos and observability (Charity Majors)"
-    file: charity-majors-chaos-and-observability.png
+    file: charity-majors-chaos-and-observability
     date: 2019-03-28
   - name: "precognition of security (Aaron Rinehart)"
-    file: aaron-rinehart-security.png
+    file: aaron-rinehart-security
     date: 2019-03-28
   - name: "reconciling chaos (Kris Nova)"
-    file: kris-nova-reconciling-chaos.png
+    file: kris-nova-reconciling-chaos
     date: 2019-03-28
   - name: "madaari (Ashutosh Raina)"
-    file: ashutosh-raina-madaari.png
+    file: ashutosh-raina-madaari
     date: 2019-03-28
   - name: "disaster testing (Padma Gopalan)"
-    file: padma-gopalan-disaster-testing.png
+    file: padma-gopalan-disaster-testing
     date: 2019-03-28
   - name: "going on-call (Chie & Wenting)"
-    file: chie-wenting-going-on-call.png
+    file: chie-wenting-going-on-call
     date: 2019-03-27
   - name: "righting the ship (Michael & Todd)"
-    file: michael-todd-righting-the-ship.png
+    file: michael-todd-righting-the-ship
     date: 2019-03-27
   - name: "extending error budgets (Jim & David)"
-    file: david-jim-extending-error-budgets.png
+    file: david-jim-extending-error-budgets
     date: 2019-03-27
   - name: "product management and SRE (Jen Wohlner)"
-    file: jen-wohlner-prod-mgmt-and-SRE.png
+    file: jen-wohlner-prod-mgmt-and-SRE
     date: 2019-03-27
   - name: "editing production data (Julie Qiu)"
-    file: julie-qiu-editing-prod-data.png
+    file: julie-qiu-editing-prod-data
     date: 2019-03-27
   - name: "aperture (Ruben Oantas)"
-    file: ruben-oantas-aperture.png
+    file: ruben-oantas-aperture
     date: 2019-03-27
   - name: "configuring PKS clusters (Angela & Nikita)"
-    file: configuring-pks-clusters.png
+    file: angela-nikita-configuring-pks-clusters
     date: 2018-10-01
-  - name: "PCF opsmanager (Alan McGinlay)"
-    file: opsmanager-v1.jpg
-    date: 2018-09-07
-  - name: "12 steps to cloud readiness (Ed & Jatin)"
-    file: ed-jatin-12-steps.jpg
-    date: 2018-09-07
-  - name: "permissions in cloud foundry (Isobel Redelmeier)"
-    file: isobel-perm.jpg
-    date: 2018-09-07
+  # - name: "PCF opsmanager (Alan McGinlay)"
+  #   file: opsmanager-v1.jpg
+  #   date: 2018-09-07
+  # - name: "12 steps to cloud readiness (Ed & Jatin)"
+  #   file: ed-jatin-12-steps.jpg
+  #   date: 2018-09-07
+  # - name: "permissions in cloud foundry (Isobel Redelmeier)"
+  #   file: isobel-perm.jpg
+  #   date: 2018-09-07
 
 - category: gophers
   path: gophers
